@@ -24,15 +24,20 @@ const ImergencyRequest = () => {
           <div className={classes.subHeading}>Select Your Location:</div>
           <select
             className={classes.form__select}
-            name="state"
+            name="location"
             value={details.location}
             placeholder='state'
             onChange={handleChange} autoComplete='on'
           >
-            <option value="Assam">Assam</option>
-            <option value="Arunachal">Arunachal</option>
-            <option value="Manipur">Manipur</option>
-            <option value="Nagaland">Nagaland</option>
+            <option value="Admin_Building">Admin Building</option>
+            <option value="NIT_Point">NIT Point</option>
+            <option value="T_Point">T Point</option>
+            <option value="Gymkhana Park">Gymkhana Park</option>
+            <option value="Sport_Complex">Sport Complex</option>
+            <option value="Food_Court">Food Court</option>
+            <option value="Hostel_67">Hostel 6/7</option>
+            <option value="Radio_Center">Radio Center</option>
+            <option value="Professor_Quatar">Professor Quatar</option>
           </select>
         </div>
         <div className={classes.submitBox}>

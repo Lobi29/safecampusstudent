@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 // assets
 import { FcGoogle } from "react-icons/fc";
@@ -18,12 +19,17 @@ const Resource = () => {
         <div className={classes.subheading}>
           Awareness campaign educates community on theft prevention, vigilance, security measures, reporting, and community involvement for safer neighborhoods
         </div>
-        <div className={classes.linkContainer}>
-          <FcGoogle className={classes.icon} />
-          <div className={classes.meetLInk}>
-            Join Meet
+        <Link to="https://meet.google.com/byc-dxdq-ues?pli=1" style={{
+          textDecoration: "none",
+          color: "#111"
+        }}>
+          <div className={classes.linkContainer}>
+            <FcGoogle className={classes.icon} />
+            <div className={classes.meetLInk}>
+              Join Meet
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
       <div className={classes.articleContainer}>
         <div className={classes.categoryHeading}>Popular Categoies : </div>
@@ -41,27 +47,42 @@ const Resource = () => {
               <div className={classes.newsSubHeading}>
                 Campus safety and security refers to the measures taken by a college or university  .....
               </div>
-              <button onClick={() => {console.log("first")}} className={classes.buttonNews}>Know More</button>
+              <Link to="/news" style={{
+                textDecoration: "none",
+                color: "#111"
+              }}>
+                <button onClick={() => { console.log("first") }} className={classes.buttonNews}>Know More</button>
+              </Link>
             </div>
             <img className={classes.newsImg} src={campaignImage} alt="news" />
           </div>
           <div className={classes.news}>
             <div className={classes.newsText}>
-              <div className={classes.newsHeading}>What is Campus Safety and Security?</div>
+              <div className={classes.newsHeading}>Crime Prevention Safety, Safety Awareness on Campus </div>
               <div className={classes.newsSubHeading}>
-                Campus safety and security refers to the measures taken by a college or university  .....
+                Crime prevention is one of the primary goals of the Office of Campus Safety. Together, with other campus offices, the department.....
               </div>
-              <button onClick={() => {console.log("first")}} className={classes.buttonNews}>Know More</button>
+              <Link to="/news" style={{
+                textDecoration: "none",
+                color: "#111"
+              }}>
+                <button onClick={() => { console.log("first") }} className={classes.buttonNews}>Know More</button>
+              </Link>
             </div>
             <img className={classes.newsImg} src={campaignImage} alt="news" />
           </div>
           <div className={classes.news}>
             <div className={classes.newsText}>
-              <div className={classes.newsHeading}>What is Campus Safety and Security?</div>
+              <div className={classes.newsHeading}>Why is Campus Security and Safety Important?</div>
               <div className={classes.newsSubHeading}>
-                Campus safety and security refers to the measures taken by a college or university  .....
+                The goal of campus security is to take risks out of the equation so students can feel comfortable and focus on learning and so .....
               </div>
-              <button onClick={() => {console.log("first")}} className={classes.buttonNews}>Know More</button>
+              <Link to="/news" style={{
+                textDecoration: "none",
+                color: "#111"
+              }}>
+                <button onClick={() => { console.log("first") }} className={classes.buttonNews}>Know More</button>
+              </Link>
             </div>
             <img className={classes.newsImg} src={campaignImage} alt="news" />
           </div>

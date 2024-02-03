@@ -43,15 +43,15 @@ const Complain = () => {
             <div>Select the Category :</div>
             <select
               className={classes.form__select}
-              name="state"
+              name="category"
               value={complain.category}
-              placeholder='state'
+              placeholder='Enter Category'
               onChange={handleChange} autoComplete='on'
             >
-              <option value="Assam">Assam</option>
-              <option value="Arunachal">Arunachal</option>
-              <option value="Manipur">Manipur</option>
-              <option value="Nagaland">Nagaland</option>
+              <option value="theft">theft</option>
+              <option value="violence">violence</option>
+              <option value="harrashment">harrashment</option>
+              <option value="stalking">stalking</option>
             </select>
           </div>
           <div className={classes.inputBox}>

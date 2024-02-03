@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 // Assets
 import { HiOutlineMail } from "react-icons/hi";
@@ -62,7 +62,12 @@ const Login = () => {
             />
           </div>
           <div className={classes.submitBox}>
-            <button className={classes.buttonSubmit} type='submit'>Login</button>
+            <Link to="/" style={{
+              textDecoration: "none",
+              color: "#111"
+            }}>
+              <button className={classes.buttonSubmit} type='submit'>Login</button>
+            </Link>
           </div>
         </form>
       </div>

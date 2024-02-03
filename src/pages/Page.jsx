@@ -7,6 +7,7 @@ import HomePage from '../components/Home/Home';
 import SecurityNotice from '../components/SecurityNotice/SecurityNotice';
 import Resource from '../components/Resource/Resource';
 import Complain from '../components/Complain/Complain';
+import News from '../components/News/News';
 
 const Page = () => {
     return (
@@ -17,6 +18,7 @@ const Page = () => {
                 <Route exact path='/resource' element={<Resource />} />
                 <Route exact path='/complain' element={<Complain />} />
                 <Route exact path='/notice' element={<SecurityNotice />} />
+                <Route exact path='/news' element={<News />} />
             </Routes>
         </div>
     )
