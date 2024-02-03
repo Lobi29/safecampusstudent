@@ -2,7 +2,6 @@ import React from 'react'
 
 // assets
 import { FcGoogle } from "react-icons/fc";
-import { FcBrokenLink } from "react-icons/fc";
 import campaignImage from '../../assets/resource.jpg';
 
 
