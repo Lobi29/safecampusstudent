@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 // Assets
 import complainImage from '../../assets/13105981_5146766.jpg';
 
@@ -25,6 +24,11 @@ const Complain = () => {
     setComplain({ ...complain, profilePicture: base64 })
   };
 
+  // const handleSubmit = (e) => {
+  //   e.prevenDefault();
+  //   toast.success("You will be approach soon")
+  // }
+
 
   return (
     <div className={classes.login}>
@@ -38,7 +42,7 @@ const Complain = () => {
         <div className={classes.subHeading}>
           Never hesitate to complain about your issues, INSTITUE IS WITH YOU
         </div>
-        <form className={classes.form} onSubmit={() => console.log("hello")}>
+        <form className={classes.form} onSubmit={() => console.log("first")}>
           <div className={classes.selectBox}>
             <div>Select the Category :</div>
             <select
